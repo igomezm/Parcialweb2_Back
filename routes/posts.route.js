@@ -1,37 +1,29 @@
 var express = require('express');
 var router = express.Router();
-const postController=require ('../controllers/post.controller');
 
-router.get('/', postController.findAllPosts);
+const postController = require ('../controllers/post.controller'); 
+
+
+router.get('/', postController.findAllPost);
 /**
- * GET Route to find post by id
+ * GET Route to find user by id
  */
 router.get('/:idPost', postController.findOnePost);
 /**
- * POST Route to create post
+ * POST Route to create user
  */
 router.post ('/',postController.createPost);
 /**
- * PUT Route to update an user by id
- */
-router.put ('/:idPost',postController.updatePost);
-/**
-
  * DELETE Route to delete an user by username
  */
-router.delete ('/:idPost',postController.deletePost);
-/**
- * DELETE Route to delete all users
- */
-router.delete ('/',postController.deleteAllPosts);
-
-
+router.delete ('/:idPost',postController.deletePostByidPost);
 
 
 /**
  * TASK:
- * ADD THE MISSING ROUTES ______________________________________________________
+ * ADD THE MISSING ROUTES ______________________________________________________ 
  */
 
 // Export router
 module.exports = router;
+  

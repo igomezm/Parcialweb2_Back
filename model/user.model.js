@@ -13,7 +13,7 @@ module.exports = (sequelize, Sequelize) =>{
         creation_date: Sequelize.DATE,
     }, {
         tableName: "users"
-    });
+    });    
     
     return User;
 }

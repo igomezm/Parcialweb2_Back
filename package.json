@@ -1,5 +1,5 @@
 {
-  "name": "twitter",
+  "name": "mybackpolitwitter",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
-    "express": "^4.17.1",
+    "express": "~4.16.1",
     "morgan": "~1.9.1",
     "mysql2": "^2.1.0",
     "npm": "^6.14.3",
@@ -24,13 +24,5 @@
     "mysql"
   ],
   "author": "Carlos Ivan Rivera Parra",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/igomezm/Taller5.git"
-  },
-  "bugs": {
-    "url": "https://github.com/igomezm/Taller5/issues"
-  },
-  "homepage": "https://github.com/igomezm/Taller5#readme"
+  "license": "MIT"
 }

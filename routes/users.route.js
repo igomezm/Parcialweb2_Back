@@ -13,7 +13,6 @@ router.get('/:idUser', userController.findOneUser);
  * POST Route to create user
  */
 router.post ('/',userController.createUser);
-
 /**
  * PUT Route to update an user by id
  */
@@ -27,7 +26,11 @@ router.delete ('/:username',userController.deleteUserByUsername);
  */
 router.delete ('/',userController.deleteAllUsers);
 
-router.post('/login',userController.login);
+router.post ('/login',userController.login);
+
+router.get('/username/:username', userController.findOneUserByUsername);
+
+
 
 
 /**
