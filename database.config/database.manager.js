@@ -12,8 +12,14 @@ const User = UserModel (sequelizeConnection, Sequelize);
 const Post = PostModel (sequelizeConnection, Sequelize);
 
 //CREATE RELATIONS BETWEEN MODELS
+User.hasMany(Post, { as: 'posts', foreignKey: 'idUser' });
+Post.belongsTo( User, { as : 'user', foreignKey: 'idUser' });
+
+/*CREATE RELATIONS BETWEEN MODELS
 User.hasMany(Post, { foreignKey: 'idPost', sourceKey: 'idUser' });
 Post.belongsTo( User, { foreignKey: 'idUser', sourceKey: 'idPost' });
+
+*/
 
 //GROUP MODELS
 const models = {
